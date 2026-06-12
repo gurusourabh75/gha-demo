@@ -1,4 +1,4 @@
- name: Hello World
+name: Hello World
 
 on:
   workflow_dispatch:
@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello Step 
-        run:
-        echo "this is line one"
-        echo "this is line two"
-     
-      
-
+      - name: Hello Step
+        run: |
+          echo "this is line one"
+          echo "this is line two"
